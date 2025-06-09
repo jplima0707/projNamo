@@ -57,7 +57,15 @@ export default function SecondScreen() {
           </Text>
         </View>
         <ImageCarousel />
-         <Text style={{ color: primaryTextColor, fontSize: 20 }}>Próximo</Text>
+        <View style={[styles.line, { backgroundColor: secondaryTextColor }]} />
+        <View style={[styles.card, { backgroundColor: cardBackgroundColor }]}>
+          <Text style={{ color: primaryTextColor, fontSize: 24, marginBottom: 20 }}>
+            O que eu mais amo em você
+          </Text>
+          <Text style={{ color: primaryTextColor, fontSize: 18, textAlign: 'center' }}>
+            É o seu jeito de ser, a sua bondade e o seu carinho. Você é a luz da minha vida!
+          </Text>
+        </View>
       </View>
     </ImageBackground>
   );
@@ -80,4 +88,20 @@ const styles = StyleSheet.create({
     height: height * 0.2,
     width: width * 0.9,
   },
+  cardText: {
+    fontSize: 18,
+    textAlign: 'center',
+    width: width * 0.9,
+     justifyContent: 'center',
+    borderWidth: 1,
+    padding: 20,
+    borderRadius: 10,
+    marginBottom: 20,
+  },
+  line: {
+    width: width * 0.9,
+    height: 1,
+    marginVertical: 10,
+    alignContent: 'center',
+  }
 });

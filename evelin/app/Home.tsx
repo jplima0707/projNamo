@@ -57,6 +57,11 @@ return (
     >
       <Text style={{ color: primaryTextColor }}>Próximo</Text>
     </TouchableOpacity>
+    <View style={{ marginTop: 50 }}>
+      <Text style={{ color: secondaryTextColor, fontSize: 16 }}>
+        Criado em 09/06/2025
+      </Text>
+    </View>
   </View>
 );
 }
