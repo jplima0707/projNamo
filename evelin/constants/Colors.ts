@@ -14,6 +14,10 @@ export const Colors = {
     icon: '#687076',
     tabIconDefault: '#687076',
     tabIconSelected: tintColorLight,
+    loveTextPrimary: '#B00020',
+    loveTextSecondary: '#D81B60',
+    loveCardBackground: '#FFF0F5',
+    loveCardBorder: '#FFC0CB',
   },
   dark: {
     text: '#ECEDEE',
@@ -22,5 +26,9 @@ export const Colors = {
     icon: '#9BA1A6',
     tabIconDefault: '#9BA1A6',
     tabIconSelected: tintColorDark,
+    loveTextPrimary: '#eb34e5',
+    loveTextSecondary: '#FFB6C1',
+    loveCardBackground: '#2e232b',
+    loveCardBorder: '#B71C1C',
   },
 };
