@@ -2,6 +2,7 @@ import React, { useEffect, useState} from 'react';
 import { View, Text, StyleSheet,Dimensions } from 'react-native';
 import { useThemeColors } from './index'; 
 import { ImageBackground } from 'react-native';
+import ImageCarousel from '@/components/Carousel';
 
 export default function SecondScreen() {
   const colors = useThemeColors();
@@ -55,6 +56,7 @@ export default function SecondScreen() {
             {timeTogether}
           </Text>
         </View>
+        <ImageCarousel />
          <Text style={{ color: primaryTextColor, fontSize: 20 }}>Próximo</Text>
       </View>
     </ImageBackground>
