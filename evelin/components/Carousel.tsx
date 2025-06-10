@@ -2,8 +2,6 @@ import React from 'react';
 import { Dimensions, Image, View } from 'react-native';
 import Carousel from 'react-native-reanimated-carousel';
 
-const { width } = Dimensions.get('window');
-
 const images = [
     require('../assets/images/img1.jpeg'),
     require('../assets/images/img2.jpeg'),
@@ -26,16 +24,19 @@ const images = [
 ];
 
 export default function ImageCarousel() {
+  const { width, height } = Dimensions.get('window');
   return (
     <Carousel
       loop
-      width={width}
-      height={300}
-      autoPlay={true}
+      width={width*0.9}
+      height={height * 0.6}
+      autoPlay
+      autoPlayInterval={3000}
       data={images}
       scrollAnimationDuration={1000}
+      mode='parallax'
       renderItem={({ item }) => (
-        <View style={{ flex: 1 }}>
+        <View style={{ flex: 1,}}>
           <Image
             source={item}
             style={{ width: '100%', height: '100%', resizeMode: 'cover', borderRadius: 10 }}

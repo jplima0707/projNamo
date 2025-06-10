@@ -3,6 +3,8 @@
  * There are many other ways to style your app. For example, [Nativewind](https://www.nativewind.dev/), [Tamagui](https://tamagui.dev/), [unistyles](https://reactnativeunistyles.vercel.app), etc.
  */
 
+import { rgbaArrayToRGBAColor } from "react-native-reanimated/lib/typescript/Colors";
+
 const tintColorLight = '#0a7ea4';
 const tintColorDark = '#fff';
 
@@ -16,7 +18,7 @@ export const Colors = {
     tabIconSelected: tintColorLight,
     loveTextPrimary: '#B00020',
     loveTextSecondary: '#D81B60',
-    loveCardBackground: '#FFF0F5',
+    loveCardBackground: 'rgba(58, 83, 194, 0.8)',
     loveCardBorder: '#FFC0CB',
   },
   dark: {
@@ -28,7 +30,7 @@ export const Colors = {
     tabIconSelected: tintColorDark,
     loveTextPrimary: '#eb34e5',
     loveTextSecondary: '#FFB6C1',
-    loveCardBackground: '#2e232b',
+    loveCardBackground: 'rgba(58, 83, 194, 0.8)',
     loveCardBorder: '#B71C1C',
   },
 };

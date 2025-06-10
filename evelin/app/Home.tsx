@@ -11,7 +11,7 @@ function LoveTitle() {
   });
   const colors = useThemeColors();
 
-  if (!fontsLoaded) return null; // ou algum loading
+  if (!fontsLoaded) return null; 
 
   return (
     <Text style={{ fontFamily: 'DancingScript_400Regular', fontSize: 36, color: colors.loveTextPrimary, marginBottom: 20 }}>
@@ -52,7 +52,7 @@ return (
   <View style={[styles.container, { backgroundColor }]}>
     <LoveTitle />
     <TouchableOpacity
-      style={[styles.button, { backgroundColor: cardBackgroundColor, borderColor: primaryTextColor, borderWidth: 1 }]}
+      style={[styles.button, { backgroundColor: backgroundColor, borderColor: primaryTextColor, borderWidth: 1 }]}
       onPress={() => navigation.navigate('Second')}
     >
       <Text style={{ color: primaryTextColor }}>Próximo</Text>
