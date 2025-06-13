@@ -29,7 +29,7 @@ export default function ImageCarousel() {
     <Carousel
       loop
       width={width*0.9}
-      height={height * 0.6}
+      height={height * 0.7}
       autoPlay
       autoPlayInterval={3000}
       data={images}

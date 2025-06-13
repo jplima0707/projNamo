@@ -98,7 +98,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     padding: 20,
     borderRadius: 10,
-    marginVertical: 20,
+    marginTop: 20,
     width: width * 0.9,
   },
   cardText: {
