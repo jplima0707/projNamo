@@ -8,6 +8,7 @@ export default function SecondScreen() {
   const colors = useThemeColors();
   const backgroundColor = colors.background;
   const primaryTextColor = colors.loveTextPrimary;
+  const text = colors.textSecond;
   const secondaryTextColor = colors.loveTextSecondary;
   const cardBackgroundColor = colors.loveCardBackground;
 
@@ -40,6 +41,8 @@ export default function SecondScreen() {
   
     return `${years} anos, ${months} meses, ${days} dias\n${hours}h ${minutes}m ${seconds}s`;
   }
+  const { width, height } = Dimensions.get('window');
+
 
   return (
     <ImageBackground
@@ -50,29 +53,29 @@ export default function SecondScreen() {
       <ScrollView>    
         <View style={styles.container}>
           <View style={[styles.card, { backgroundColor: cardBackgroundColor }]}>
-            <Text style={{ color: primaryTextColor, fontSize: 24, marginBottom: 20 }}>
+            <Text style={{ color: text, fontSize: 24, marginBottom: 20 }}>
               Estamos namorando há
             </Text>
-            <Text style={{ color: primaryTextColor, fontSize: 27, fontWeight: 'bold', alignSelf: 'center' }}>
+            <Text style={{ color: text, fontSize: width*0.06, fontWeight: 'bold', alignSelf: 'center' }}>
               {timeTogether}
             </Text>
           </View>
           <ImageCarousel />
           <View style={[styles.line, { backgroundColor: secondaryTextColor }]} />
           <View style={[styles.cardText, { backgroundColor: cardBackgroundColor }]}>
-            <Text style={{ color: primaryTextColor, fontSize: 20, marginBottom: 20 }}>
+            <Text style={{ color: text, fontSize: 20, marginBottom: 20 }}>
               Oi Mor, Feliz dia dos Namorados!
             </Text>
-            <Text style={{ color: primaryTextColor, fontSize: 18, textAlign: 'center' }}>
+            <Text style={{ color: text, fontSize: 18, textAlign: 'center' }}>
               Hoje é um dia especial pra nós, e eu queria aproveitar para te lembrar do quanto você é importante na minha vida. 
               Cada momento do teu lado é especial e eu sou muito grato por ter você na minha vida, bundona. 
               Sempre que duvidar do nosso amor, lembre-se disso e acesse esse site (se ele ainda funcionar) e saiba que isso é só o começo da nossa linda história.
               Espero que goste dessa pequena homenagem.
             </Text>
-            <Text style={{ color: primaryTextColor, fontSize: 18, textAlign: 'center', marginTop: 20 }}>
+            <Text style={{ color: text, fontSize: 18, textAlign: 'center', marginTop: 20 }}>
               OBS.: Acho que não deveria ter feito isso no nosso primeiro dia dos namorados, porque agora a régua ta alta KKKKKKKK 
             </Text>
-            <Text style={{ color: primaryTextColor, fontSize: 20, textAlign: 'center', marginTop: 20 }}>
+            <Text style={{ color: text, fontSize: 20, textAlign: 'center', marginTop: 20 }}>
               Beijão mor, eu te amo muito!
             </Text>
           </View>
@@ -96,7 +99,6 @@ const styles = StyleSheet.create({
     padding: 20,
     borderRadius: 10,
     marginVertical: 20,
-    height: height * 0.2,
     width: width * 0.9,
   },
   cardText: {

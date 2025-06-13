@@ -20,6 +20,7 @@ export const Colors = {
     loveTextSecondary: '#D81B60',
     loveCardBackground: 'rgba(58, 83, 194, 0.8)',
     loveCardBorder: '#FFC0CB',
+    textSecond: '#fff',
   },
   dark: {
     text: '#ECEDEE',
@@ -32,5 +33,6 @@ export const Colors = {
     loveTextSecondary: '#FFB6C1',
     loveCardBackground: 'rgba(58, 83, 194, 0.8)',
     loveCardBorder: '#B71C1C',
+    textSecond: '#fff',
   },
 };
